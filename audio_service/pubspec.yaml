@@ -32,13 +32,21 @@ dependencies:
 
   # Use these deps when publishing.
   audio_service_platform_interface: ^0.1.1
-  audio_service_web: ^0.1.2
+  audio_service_web:
+    path: ../audio_service_web
 
-  audio_session: ^0.1.16
-  rxdart: '>=0.26.0 <0.28.0'
-  flutter_cache_manager: ^3.3.1
+  audio_session:
+    git:
+      url: git@github.com:arturograu/audio_session.git
+      ref: chore/#134-support-rxdart-0.28.0
+  rxdart: ^0.28.0
+  flutter_cache_manager:
+    git:
+      url: git@github.com:arturograu/flutter_cache_manager.git
+      ref: chore/upgrade-to-rxdart-0.28.0
+      path: flutter_cache_manager
   clock: ^1.1.0
-  js: '>=0.6.3 <0.8.0'
+  js: ">=0.6.3 <0.8.0"
   flutter:
     sdk: flutter
   flutter_web_plugins:

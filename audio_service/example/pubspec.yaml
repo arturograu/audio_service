@@ -1,6 +1,6 @@
 name: audio_service_example
 description: Demonstrates how to use the audio_service plugin.
-publish_to: 'none'
+publish_to: "none"
 
 environment:
   sdk: ">=2.14.0 <4.0.0"
@@ -11,13 +11,20 @@ dependencies:
     sdk: flutter
 
   path_provider: ^2.0.1
-  audio_session: ^0.1.18
-  just_audio: ^0.9.36
+  audio_session:
+    git:
+      url: git@github.com:arturograu/audio_session.git
+      ref: chore/#134-support-rxdart-0.28.0
+  just_audio:
+    git:
+      url: git@github.com:arturograu/just_audio.git
+      ref: chore/#1265-support-rxdart-0.28.0
+      path: just_audio
   flutter_tts: ^3.8.3
   device_info_plus: ^9.1.0
   android_content_provider: ^0.4.1
-  permission_handler : ^11.0.1
-  rxdart: ^0.27.2
+  permission_handler: ^11.0.1
+  rxdart: ^0.28.0
   audio_service:
     path: ../
   audio_service_mpris: ^0.1.3
